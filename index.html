@@ -6,6 +6,7 @@
     <title>Legal Solution</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/34d0e0ea93.js" crossorigin="anonymous"></script>
 
     <!-- font family code -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,13 +23,17 @@
           theme: {
             extend: {
               colors: {
-                color: 'rgb(182, 140, 90)',
+                'color': 'rgb(182, 140, 90)',
               },
               fontFamily:{
                 'font-family': '"EB Garamond",serif',
                  font:'"Poppins", sans-serif'
 
-              }
+              },
+              
+              backgroundImage:{
+                Img1:"url('/images/banner.png')",
+              },
             }
           }
         }
@@ -37,7 +42,7 @@
 </head>
 <body>
     <header class="container mx-auto">
-        <nav>
+        <nav class="md:p-10 pb-8">
             <div class="navbar bg-base-100 font-font">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -75,17 +80,35 @@
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li><a class="text-lg font-semibold text-gray-400">Home</a></li>
-                    <li><a class="text-lg font-semibold text-gray-400">service</a> </li>
-                    <li><a class="text-lg font-semibold text-gray-400">Cases</a></li>
-                    <li><a class="text-lg font-semibold text-gray-400">Blog</a></li>
-                    <li><a class="text-lg font-semibold text-gray-400">contact Us</a></li>
+                    <li><a class="text-lg font-semibold text-gray-400">service <i class="fa-solid fa-angle-right"></i></a> </li>
+                    <li><a class="text-lg font-semibold text-gray-400">Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a class="text-lg font-semibold text-gray-400">Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a class="text-lg font-semibold text-gray-400">contact Us <i class="fa-solid fa-angle-right"></i></a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn bg-color text-white">Free Consultation</a>
+                  <a class="btn bg-color ">Free Consultation</a>
                 </div>
               </div>
         </nav>
+        <!-- nav section end -->
+         <!-- banner section start -->
+          <section class="bg-Img1 bg-no-repeat bg-cover bg-center  rounded-xl">
+                <div class="flex flex-col justify-center items-center ">
+                    <div class="text-white text-center">
+                        <h1 class="text-5xl font-bold pt-28 mb-10">We Provide Effective <br>Legal Solutions</h1>
+                        <p class="text-2xl text-gray-300 mb-10">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="pb-36 lg:flex gap-6">
+                            <input type="text" placeholder="Search your services" class="font-bold text-white pr-32 pl-4 py-4 rounded-lg lg:mb-0 mb-5">
+                            <input type="button" name="" id="" value="Search" class="bg-color font-bold text-white px-12 py-4 rounded-lg">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+          </section>
     </header>
     <main>
 
